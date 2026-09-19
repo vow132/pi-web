@@ -1880,3 +1880,8 @@ span.token.table {
     font-size: max(16px, var(--chat-content-font-size, 14px)) !important;
   }
 }
+
+@keyframes custom-update-pulse {
+  from { opacity: 1; }
+  to { opacity: 0.35; }
+}

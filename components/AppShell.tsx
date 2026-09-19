@@ -1545,6 +1545,41 @@ export function AppShell() {
           </svg>
           {!mobile && <span>{translate("tools.label")}</span>}
         </button>
+        <button
+          type="button"
+          onClick={() => {
+            const terminalCwd = selectedSession?.cwd ?? newSessionCwd;
+            if (terminalCwd) handleOpenTerminal(terminalCwd);
+          }}
+          disabled={(mobile && !showChat) || !(selectedSession?.cwd ?? newSessionCwd)}
+          title={translate("terminal.open")}
+          aria-label={translate("terminal.open")}
+          style={{
+            display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+            width: mobile ? TOP_BAR_ICON_BUTTON_SIZE : undefined,
+            height: "100%", padding: mobile ? 0 : "0 12px",
+            background: "none",
+            border: "none",
+            borderRight: "1px solid var(--border)",
+            cursor: (mobile && !showChat) || !(selectedSession?.cwd ?? newSessionCwd) ? "not-allowed" : "pointer",
+            color: "var(--text-muted)",
+            opacity: (mobile && !showChat) || !(selectedSession?.cwd ?? newSessionCwd) ? 0.45 : 1,
+            fontSize: 11, whiteSpace: "nowrap", transition: "color 0.1s, background 0.1s",
+          }}
+          onMouseEnter={(event) => {
+            if (mobile && !showChat) return;
+            event.currentTarget.style.color = "var(--text)";
+          }}
+          onMouseLeave={(event) => {
+            event.currentTarget.style.color = "var(--text-muted)";
+          }}
+        >
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "var(--text-dim)", flexShrink: 0 }} aria-hidden="true">
+            <polyline points="4 17 10 11 4 5" />
+            <line x1="12" y1="19" x2="20" y2="19" />
+          </svg>
+          {!mobile && <span>{translate("terminal.title")}</span>}
+        </button>
       </div>
     );
   };
@@ -2442,6 +2477,7 @@ export function AppShell() {
               )}
               onMentionLines={rightPanelOpen ? handleFileLineMention : undefined}
               onAtMention={handleAtMention}
+              onFileMutated={handleExplorerRefresh}
               onOpenFile={(filePath, page) => handleOpenFile(
                 filePath,
                 getFileName(filePath),
