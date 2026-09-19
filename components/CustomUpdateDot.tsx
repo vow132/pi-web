@@ -123,7 +123,7 @@ export function CustomUpdateDot() {
       title={title}
       aria-label={title}
       style={{
-        width: 14, height: 14, padding: 0, flexShrink: 0,
+        width: 16, height: 16, padding: 0, flexShrink: 0,
         display: "inline-flex", alignItems: "center", justifyContent: "center",
         background: "none", border: "none", cursor: status?.available && !updating ? "pointer" : "default",
       }}
@@ -131,7 +131,7 @@ export function CustomUpdateDot() {
       <span
         data-custom-update-dot={status?.available ? "update" : "current"}
         style={{
-          width: 8, height: 8, borderRadius: "50%",
+          width: 10, height: 10, borderRadius: "50%",
           background: color,
           boxShadow: updating ? `0 0 5px ${YELLOW}` : "none",
           opacity: failed ? 0.6 : 1,
