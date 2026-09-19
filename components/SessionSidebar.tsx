@@ -12,6 +12,7 @@ import { formatRelativeTime } from "@/lib/i18n/format";
 import { useI18n } from "@/hooks/useI18n";
 import { useResizablePanel } from "@/hooks/useResizablePanel";
 import { DirectoryPicker } from "./DirectoryPicker";
+import { CustomUpdateDot } from "./CustomUpdateDot";
 import { FileExplorer, type FileExplorerHandle } from "./FileExplorer";
 import { SessionSearch } from "./SessionSearch";
 
@@ -1083,7 +1084,8 @@ export function SessionSidebar({ selectedSessionId, onSelectSession, onNewSessio
       >
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
           <PiWebTitle />
-          <div style={{ display: "flex", gap: 6 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+            <CustomUpdateDot />
             <button
               onClick={handleNewSession}
               disabled={!selectedCwd}
