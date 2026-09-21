@@ -1,20 +1,16 @@
 {
-  "name": "@vow132/pi-web",
+  "name": "@agegr/pi-web",
   "version": "0.9.1",
   "description": "Web UI for the pi coding agent",
-  "homepage": "https://github.com/vow132/pi-web/tree/custom#readme",
+  "homepage": "https://github.com/agegr/pi-web#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vow132/pi-web.git"
+    "url": "git+https://github.com/agegr/pi-web.git"
   },
   "bugs": {
-    "url": "https://github.com/vow132/pi-web/issues"
+    "url": "https://github.com/agegr/pi-web/issues"
   },
   "license": "MIT",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
   "engines": {
     "node": ">=22.19.0"
   },
