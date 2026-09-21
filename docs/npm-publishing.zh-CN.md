@@ -1,6 +1,6 @@
 # 发布 `@vow132/pi-web` 到 npm
 
-本仓库的 `custom` 分支已配置为公开 npm scoped package：
+本仓库的 `custom2` 分支已配置为公开 npm scoped package：
 
 - 包名：`@vow132/pi-web`
 - 全局命令：`pi-web`
@@ -11,10 +11,10 @@
 
 `@vow132` 必须是你的 npm 用户名，或是你拥有发布权限的 npm Organization。如果你的 npm 用户名不是 `vow132`，请先创建同名 Organization，或把仓库里的 scope 改成你的实际 npm scope。
 
-在 `custom` 分支的仓库根目录执行：
+在 `custom2` 分支的仓库根目录执行：
 
 ```bash
-git switch custom
+git switch custom2
 npm login --registry https://registry.npmjs.org/
 npm whoami --registry https://registry.npmjs.org/
 npm ci
@@ -57,7 +57,7 @@ npm run release
 git add package.json package-lock.json
 git commit -m "Release v<version>"
 git tag -a v<version> -m "v<version>"
-git push origin custom --tags
+git push origin custom2 --tags
 ```
 
 完整的 GitHub Release 流程见 [`docs/release.md`](./release.md)。

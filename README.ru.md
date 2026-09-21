@@ -4,7 +4,7 @@
 
 Локальный браузерный интерфейс для [pi coding agent](https://github.com/earendil-works/pi). Pi Web использует те же локальные настройки и файлы сессий, что и pi, поэтому в браузере можно находить и продолжать диалоги, запускать агента, настраивать модели и ресурсы, а также просматривать файлы проекта.
 
-![Pi Web показывает сессию pi со структурированным Markdown, вызовами инструментов и навигацией по проекту](https://raw.githubusercontent.com/vow132/pi-web/custom/docs/screenshot2.png)
+![Pi Web показывает сессию pi со структурированным Markdown, вызовами инструментов и навигацией по проекту](https://raw.githubusercontent.com/vow132/pi-web/custom2/docs/screenshot2.png)
 
 ## Возможности
 

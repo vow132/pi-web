@@ -6,7 +6,7 @@
 
 中文微信群：请查看 [GitHub Discussions 帖子](https://github.com/agegr/pi-web/discussions/271)。
 
-![Pi Web 展示包含结构化 Markdown、工具调用和项目导航的 pi 会话](https://raw.githubusercontent.com/vow132/pi-web/custom/docs/screenshot2.png)
+![Pi Web 展示包含结构化 Markdown、工具调用和项目导航的 pi 会话](https://raw.githubusercontent.com/vow132/pi-web/custom2/docs/screenshot2.png)
 
 ## 功能
 

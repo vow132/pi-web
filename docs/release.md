@@ -5,7 +5,7 @@ This repo publishes two artifacts for each release:
 - npm package: `@vow132/pi-web`
 - GitHub Release: `vow132/pi-web`
 
-Use this checklist from a clean `custom` checkout.
+Use this checklist from a clean `custom2` checkout.
 
 ## 1. Preflight
 
@@ -60,7 +60,7 @@ git commit -m "Release v<version>"
 
 ```bash
 git tag -a v<version> -m "v<version>"
-git push origin custom --tags
+git push origin custom2 --tags
 ```
 
 Confirm the tag does not already exist before creating it when unsure:
@@ -173,5 +173,5 @@ Expected:
 
 - GitHub Release exists and is not a draft unless intentionally published as one.
 - npm exact version resolves.
-- `custom` is aligned with `origin/custom`.
+- `custom2` is aligned with `origin/custom2`.
 - `HEAD` points at the release commit and `v<version>` tag.
