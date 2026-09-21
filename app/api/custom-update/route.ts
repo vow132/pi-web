@@ -12,7 +12,7 @@ const SRC_DIR = "/root/pi-web-src";
 const SCRIPT = "/root/piweb-config-backups/auto-update.sh";
 const STATUS_FILE = "/root/piweb-config-backups/auto-update-status.json";
 const RUNNING_FILE = "/root/piweb-config-backups/auto-update.running";
-const DEPLOYED_PACKAGE = "/usr/lib/node_modules/@agegr/pi-web/package.json";
+const DEPLOYED_PACKAGE = "/usr/lib/node_modules/@vow132/pi-web/package.json";
 const CHECK_CACHE_TTL_MS = 60 * 1000;
 
 declare global {

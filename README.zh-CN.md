@@ -6,7 +6,7 @@
 
 中文微信群：请查看 [GitHub Discussions 帖子](https://github.com/agegr/pi-web/discussions/271)。
 
-![Pi Web 展示包含结构化 Markdown、工具调用和项目导航的 pi 会话](https://raw.githubusercontent.com/agegr/pi-web/main/docs/screenshot2.png)
+![Pi Web 展示包含结构化 Markdown、工具调用和项目导航的 pi 会话](https://raw.githubusercontent.com/vow132/pi-web/custom/docs/screenshot2.png)
 
 ## 功能
 
@@ -22,7 +22,7 @@
 Pi Web 要求 Node.js 22.19.0 或更高版本。先用 `node --version` 检查版本，然后运行：
 
 ```bash
-npx @agegr/pi-web@latest
+npx @vow132/pi-web@latest
 ```
 
 服务就绪后，命令行会尝试自动打开浏览器。如果没有打开，请访问 [http://127.0.0.1:30141](http://127.0.0.1:30141)。Pi Web 默认仅监听 `127.0.0.1`。
@@ -32,11 +32,13 @@ npx @agegr/pi-web@latest
 如需全局安装 `pi-web` 命令：
 
 ```bash
-npm install -g @agegr/pi-web@latest
+npm install -g @vow132/pi-web@latest
 pi-web
 ```
 
-更新前先用 `Ctrl+C` 停止正在运行的进程，再次执行同一条安装命令。卸载时运行 `npm uninstall -g @agegr/pi-web`。
+仓库维护者首次发布和后续发版步骤见 [npm 发布指南](./docs/npm-publishing.zh-CN.md)。
+
+更新前先用 `Ctrl+C` 停止正在运行的进程，再次执行同一条安装命令。卸载时运行 `npm uninstall -g @vow132/pi-web`。
 
 ## 配置
 
@@ -78,7 +80,7 @@ macOS 或 Linux：
 HTTP_PROXY=http://127.0.0.1:7890 \
 HTTPS_PROXY=http://127.0.0.1:7890 \
 NO_PROXY=localhost,127.0.0.1 \
-npx @agegr/pi-web@latest
+npx @vow132/pi-web@latest
 ```
 
 Windows PowerShell：
@@ -87,7 +89,7 @@ Windows PowerShell：
 $env:HTTP_PROXY = "http://127.0.0.1:7890"
 $env:HTTPS_PROXY = "http://127.0.0.1:7890"
 $env:NO_PROXY = "localhost,127.0.0.1"
-npx @agegr/pi-web@latest
+npx @vow132/pi-web@latest
 ```
 
 ## 注意事项
